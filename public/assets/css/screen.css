@@ -1,0 +1,28 @@
+html,
+body {
+	margin: 0;
+}
+
+body {
+	font-family: 'Alef', sans-serif;
+}
+
+#interFaceClient {
+	display: none;
+}
+
+#interFaceHost {
+	display: none;
+}
+
+#canvas {
+	width: 100vw;
+	height: 100vh;
+}
+
+.tapper {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	background: red;
+}
