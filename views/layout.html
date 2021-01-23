@@ -4,31 +4,42 @@
 
 <head>
     <meta charset="utf-8">
-
+    <!-- If we don't do this, things will seem really small on a telephone -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Djamin</title>
-    <link rel="stylesheet" href="/assets/css/screen.css">
-    <script src="/assets/lib/peer.min.js"></script>
-    <script src="/assets/js/arteegee.js"></script>
-    <script src="/assets/js/canvas.js"></script>
-    <script src="/assets/lib/easeljs.js"></script>
-
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 
 <body>
 
-    <button id="startButton" onclick="launchHost()">START</button>
-    <button id="joinButton" onclick="launchClient()">JOIN</button>
+    <div id="interfaceConnection">
+        <button class="button button-connection" onclick="launchHost()">START HOST</button>
+        <button class="button button-connection" onclick="launchClient()">START CLIENT</button>
+    </div>
 
     <div id="interFaceHost">
         <canvas id="canvas"></canvas>
     </div>
 
     <div id="interFaceClient">
-        <div class="tapper" onmousedown="callHost()"></div>
-        <div id="console">HELLO</div>
+        <div class="menu">
+            <div class="menu-header">PRIMITIVES</div>
+            <div class="button button-menu" onmousedown="callHost('circle')">CIRCLE</div>
+            <div class="button button-menu" onmousedown="callHost('square')">SQUARE</div>
+        </div>
     </div>
 
+    <!-- THIRD PARTY LIBRARIES -->
+    <script src="/assets/lib/peer.min.js"></script>
+    <script src="/assets/lib/easeljs.js"></script>
 
+    <!-- PROJECT X LIBRARIES -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/utilities.js"></script>
+    <script src="/assets/js/host.js"></script>
+    <script src="/assets/js/client.js"></script>
+    <script src="/assets/js/canvas.js"></script>
+    <script src="/assets/js/primitives.js"></script>
 </body>
 
 </html>

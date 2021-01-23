@@ -1,0 +1,78 @@
+html,
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: black;
+}
+
+/* SHARED */
+
+.menu {
+	margin: 10px;
+	width: 200px;
+}
+
+.menu-header {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #00a9ac;
+	color: white;
+}
+
+.button {
+	width: 100%;
+	max-width: 200px;
+	color: white;
+}
+
+.button-menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	background: #324065;
+	border-bottom: 1px solid #4b597c;
+	box-sizing: border-box;
+}
+
+/* CONNECTION PAGE */
+
+#interfaceConnection {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-connection {
+	margin: 10px;
+	height: 40px;
+	background: #00a9ac;
+}
+
+/* HOST PAGE */
+
+#interFaceHost {
+	display: none;
+}
+
+/* CLIENT PAGE */
+
+#interFaceClient {
+	display: none;
+	background-color: black;
+}
+
+/* #menuPrimatives {
+	width: 200px;
+} */
+
+.button-primative {
+	width: 100px;
+	height: 30px;
+
+}

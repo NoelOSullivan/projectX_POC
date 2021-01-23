@@ -1,16 +1,14 @@
 {
-  "name": "arteegee",
+  "name": "projectx",
   "version": "0.1.0",
-  "description": "Connect Four over WebRTC",
+  "description": "Real time animation with webgl",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Mahmud Ridwan <m@hjr265.me>",
-  "license": "BSD-3-Clause",
+  "author": "From 8 Till Late",
   "dependencies": {
     "express": "^4.13.3",
-    "jade": "^1.11.0",
     "peer": "^0.2.8"
   }
 }
