@@ -3,9 +3,9 @@ var peerId = null
 var conn = null
 // var clientIds = [];
 
-function initializePeerConnection() {
+function initializePeerConnection(type) {
 
-	peer = new Peer('', {
+	peer = new Peer(type || '', {
 		host: location.hostname,
 		port: location.port || (location.protocol === 'https:' ? 443 : 80),
 		path: '/peerjs',

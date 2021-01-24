@@ -52,12 +52,32 @@ body {
 	margin: 10px;
 	height: 40px;
 	background: #00a9ac;
+	z-index: 2;
 }
 
 /* HOST PAGE */
 
 #interFaceHost {
 	display: none;
+}
+
+.starfield { 
+	height:100%;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:0;
+}
+
+#starfieldHider { 
+	height:100%;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:0;
+	background: black;
 }
 
 /* CLIENT PAGE */
@@ -74,5 +94,6 @@ body {
 .button-primative {
 	width: 100px;
 	height: 30px;
+	z-index: 2;
 
 }

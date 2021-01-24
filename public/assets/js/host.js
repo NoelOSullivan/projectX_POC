@@ -5,10 +5,11 @@ function launchHost() {
 	// In modern applications we avoid telling things what to do
 	document.getElementById("interfaceConnection").style.display = "none";
 	document.getElementById("interFaceHost").style.display = "block";
+	document.getElementById("starfieldHider").style.visibility = "hidden";
 
 	initCanvas();
 
-	initializePeerConnection();
+	initializePeerConnection("h");
 
 	peer.on('open', function () {
 		// Event fired by success of the peer connection of HOST to the server
@@ -28,7 +29,7 @@ function launchHost() {
 					drawSquare();
 					break;
 				default:
-					drawSquare();
+					Starfield.projectXhandleOrientation(data);
 			}
 		});
 	})
