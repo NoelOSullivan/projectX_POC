@@ -17,6 +17,7 @@
 
 ### Installation
 - Clone repo
+- cd projectX_POC
 - npm install
 - npm run start
 
