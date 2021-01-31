@@ -7,7 +7,8 @@ function launchClient() {
 
 	peer.on('open', function () {
 		// TT.d Graphic interface for logging in. We can use this horrible browser prompt for the moment
-		var destId = prompt("Enter host ID:")
+		// var destId = prompt("Enter host ID:")
+		var destId = "HOST"
 		conn = peer.connect(destId, {
 			reliable: true
 		})

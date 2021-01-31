@@ -80,6 +80,14 @@ body {
 	background: black;
 }
 
+#xwingCanvas {
+	position: absolute;
+	left: 25%;
+	top: 50%;
+	width: 50%;
+	height: 50%;
+}
+
 /* CLIENT PAGE */
 
 #interFaceClient {

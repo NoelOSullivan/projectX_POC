@@ -370,12 +370,12 @@ var stats = new Stats();
                 var x = gyroData[2],
                     y = gyroData[1];
 
-                if (!that.portrait) {
-                    x = gyroData[1] * -1;
-                    y = gyroData[2];
-                }
+                // if (!that.portrait) {
+                //     x = gyroData[1] * -1;
+                //     y = gyroData[2];
+                // }
 
-                that.cursor_x = (that.w / 2) + (x * 5);
+                that.cursor_x = (that.w / 2) - (x * 5);
                 that.cursor_y = (that.h / 2) + (y * 5);
             }
         }
