@@ -61,33 +61,6 @@ body {
 	display: none;
 }
 
-.starfield { 
-	height:100%;
-	left:0;
-	position:absolute;
-	top:0;
-	width:100%;
-	z-index:0;
-}
-
-#starfieldHider { 
-	height:100%;
-	left:0;
-	position:absolute;
-	top:0;
-	width:100%;
-	z-index:0;
-	background: black;
-}
-
-#xwingCanvas {
-	position: absolute;
-	left: 25%;
-	top: 50%;
-	width: 50%;
-	height: 50%;
-}
-
 /* CLIENT PAGE */
 
 #interFaceClient {

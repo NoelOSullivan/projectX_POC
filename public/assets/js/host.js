@@ -7,8 +7,6 @@ function launchHost() {
     document.getElementById("interFaceHost").style.display = "block";
     document.getElementById("starfieldHider").style.visibility = "hidden";
 
-    initCanvas();
-
     initializePeerConnection("HOST");
 
     peer.on('open', function() {
@@ -28,8 +26,6 @@ function launchHost() {
                 // case "square":
                 // 	drawSquare();
                 // 	break;
-                default: xwingScene.control(data);
-                Starfield.projectXhandleOrientation(data);
             }
         });
     })
