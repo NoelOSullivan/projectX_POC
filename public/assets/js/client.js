@@ -1,6 +1,7 @@
 function launchClient() {
 
 	document.getElementById("interfaceConnection").style.display = "none";
+	document.getElementById("interFaceHost").style.display = "none";
 	document.getElementById("interFaceClient").style.display = "block";
 
 	initializePeerConnection();
@@ -27,6 +28,7 @@ function launchClient() {
 }
 
 function callHost(action) {
+	console.log("YYYYYY");
 	conn.send([action]);
 }
 

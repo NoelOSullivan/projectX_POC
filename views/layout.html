@@ -18,24 +18,28 @@
     </div>
 
     <div id="interFaceHost">
+        <canvas id="scene"></canvas>
     </div>
-
-    
 
     <div id="interFaceClient">
         <div class="menu">
-            <div class="button button-menu" onmousedown="callHost('messageToHost')">YOUR BUTTON HERE</div>
+            <div class="button button-menu" onmousedown="callHost('message')">YOUR BUTTON HERE</div>
         </div>
     </div>
 
     <!-- THIRD PARTY LIBRARIES -->
     <script src="/assets/lib/peer.min.js"></script>
+    <script src="/assets/lib/three.min.js"></script>
+    <script src="/assets/lib/TweenMax.min.js"></script>
 
     <!-- PROJECT X LIBRARIES -->
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/utilities.js"></script>
     <script src="/assets/js/host.js"></script>
     <script src="/assets/js/client.js"></script>
+
+    
+    <script src="/assets/js/spacetube/spacetube.js"></script>
 
 </body>
 

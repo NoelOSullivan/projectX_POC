@@ -5,27 +5,25 @@ function launchHost() {
     // In modern applications we avoid telling things what to do
     document.getElementById("interfaceConnection").style.display = "none";
     document.getElementById("interFaceHost").style.display = "block";
-    document.getElementById("starfieldHider").style.visibility = "hidden";
 
     initializePeerConnection("HOST");
 
-    peer.on('open', function() {
+    peer.on('open', function () {
         // Event fired by success of the peer connection of HOST to the server
         console.log("HOST ID : ", peerId);
     })
-    peer.on('connection', function(conn) {
+    peer.on('connection', function (conn) {
         // Event fired by reception of data package from a client
-        conn.on('data', function(data) {
+        conn.on('data', function (data) {
             console.log('Received', data);
             // TT.d Interface for receiving demands (Graphic Object, Behaviour, Layer ...)
             // TT.d Interface for direccting demands to correct functions
             switch (data[0]) {
-                // case "circle":
-                // 	drawCircle();
-                // 	break;
-                // case "square":
-                // 	drawSquare();
-                // 	break;
+                case "message":
+                    window.tunnel.projectXhandleOrientation();
+                    break;
+                default:
+                    window.tunnel.projectXhandleOrientation(data);
             }
         });
     })
